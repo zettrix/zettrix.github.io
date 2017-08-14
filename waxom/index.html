@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="shortcut icon" type="image/x-icon" href="img/icon.png">
+	<link rel="stylesheet" href="libs/bxslider/jquery.bxslider.css"></link>
+	<link rel="stylesheet" href="css/font-awesome.css"></link>
+	<link rel="stylesheet" href="css/main.css"></link>
+	
+</head>
+<body>
+
+	<header class="header">
+		<div class="container">
+			<div class="header-top">
+				<div class="header-top-logo logo">
+					<img src="img/logo.png" alt="Waxom">
+					<span>Waxom</span>
+				</div>
+				<nav class="header-top-nav">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Portfolio</a></li>
+						<li><a href="#">Features</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">Pricing</a></li>
+						<li><a href="#">Shortcodes</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</nav>
+				<div class="header-top-right">
+					<a href="#" class="fa fa-id-card-o" aria-hidden="true">&nbsp;</a>
+					<a href="#" class="fa fa-search" aria-hidden="true">&nbsp;</a>
+				</div>
+			</div>
+			<div class="header-middle">
+				<h3>Unique and Modern Design</h3>
+				<h1>Portfolio PSD Template</h1>
+				<p>Nam liber tempor cum soluta nobis eleifend option congue nihil imper- <br> diet doming id quod mazim placerat facer possim assum.</p>
+				<a class="but" href="#">get started</a>
+			</div>
+		</div>
+		<ul class="header-slider">
+			<li><img src="img/pic1.jpg" /></li>
+			<li><img src="img/pic1.jpg" /></li>
+			<li><img src="img/pic1.jpg" /></li>
+			<li><img src="img/pic1.jpg" /></li>
+			<li><img src="img/pic1.jpg" /></li>
+		</ul>
+	</header><!-- header -->
+
+	<section class="services">
+		<div class="container">
+			<div class="box">
+				<span class="box-a"></span>
+				<h2>Web & App Design</h2>
+				<p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
+				<hr>
+			</div>
+			<div class="box">
+				<span class="box-b"></span>
+				<h2>Development</h2>
+				<p>Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
+				<hr>
+			</div>
+			<div class="box">
+				<span class="box-c"></span>
+				<h2>Customization</h2>
+				<p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
+				<hr>
+			</div>
+			<div class="box">
+				<span class="box-d"></span>
+				<h2>Marketing</h2>
+				<p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
+				<hr>
+			</div>
+		</div>
+	</section><!-- services -->
+
+	<section class="ideas">
+		<div class="container">
+			<div class="heading">
+				<h2>Waxom is Realization of your Ideas.</h2>
+				<p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam <br>processus dynamicus, qui sequitur mutationem consuetudium.</p>
+			</div>
+			<div class="ideas-slider">
+				<ul class="roundabout-holder">
+					<li><img src="img/slide2.png" alt=""></li>
+					<li><img src="img/slide1.png" alt=""></li>
+					<li><img src="img/slide3.png" alt=""></li>
+				</ul>
+			</div><!-- slider -->
+		</div>
+	</section><!-- ideas -->
+
+	<section class="section-4">
+		<div class="container">
+			<div class="box-r">
+				<h4><span>Waxom</span>Multipurpose WordPress Theme</h4>
+				<p>Don't Forget to Rate the Template. Thanks so much!</p>
+			</div>
+			<a class="but" href="#">purchase now</a>
+		</div>
+	</section><!-- section-4 -->
+
+	<section class="project">
+		<div class="container">
+			<div class="heading">
+				<h2>Our Latest Projects.</h2>
+				<p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam <br>processus dynamicus, qui sequitur mutationem consuetudium.</p>
+			</div>
+			<div class="block">
+				<div class="choice">
+					<a href="#">All</a>
+					<a href="#">Web Design</a>
+					<a href="#">Mobile App</a>
+					<a href="#">Illustration</a>
+					<a href="#">Photography</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script src='libs/bxslider/jquery.bxslider.min.js'></script>
+	<script src='js/jquery.roundabout.min.js'></script>
+	<script src='js/common.js'></script>
+
+	<script>
+		$(document).ready(function(){
+		  $('.header-slider').bxSlider({
+		  		prevText: '',
+		  		nextText: ''
+		  	});
+
+		  	$('.roundabout-holder').roundabout({
+				minOpacity: 1,
+				minScale: 0.7
+			});
+		});
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,350 @@
+@import 'base/reset';
+@import 'fonts/fonts';
+
+body {
+    height: 100%;
+    font-family: 'MontserratLight';
+    color: #fff;
+}
+
+h1 {
+    font-family: 'RalewayExtraBold';
+}
+
+h2 {
+    font-family: 'RalewaySemiBold';
+}
+
+h3 {
+    font-family: 'RalewayMedium';
+}
+
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+$main-color: #4E4B69;
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 30px;
+    position: relative;
+    width: 100%;
+    max-width: 1230px;
+    margin: 0 auto;
+    z-index: 9999;
+}
+
+a.but{
+	display: inline-block;
+	font-family: 'RalewayExtraBold';
+	font-size: 0.875rem;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 20px 35px;
+	background: #998675;
+	box-shadow: 0px 3px 0px 0px rgba(115,99,87,1);
+	border-radius: 3px;
+	&:hover{
+		background: rgba(115,99,87,1);
+	}
+}
+
+.heading{
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	h2{
+		margin-bottom: 25px;
+		font-size: 1.875rem;
+		color: #555555;
+	}
+	p{
+		color: #8C8C8C;
+		line-height: 28px;
+	}
+}
+
+.header {
+    position: relative;
+    height: 100vh;
+
+    ul.header-slider {
+        li {
+            height: 100vh;
+            img {
+                opacity: 0.3;
+            }
+        }
+    }
+    .bx-wrapper {
+        margin: 0 auto;
+        .bx-viewport {
+            border: 0;
+            left: 0;
+            background: #000;
+        }
+        .bx-pager {
+            bottom: 30px;
+        }
+        .bx-controls-direction a {
+            width: 40px;
+            height: 73px;
+        }
+        .bx-prev {
+            background: url(../img/left.png);
+            left: 9.5%;
+            &:hover {
+                background: url(../img/right.png);
+                transform: rotate(180deg);
+            }
+        }
+        .bx-next {
+            background: url(../img/left.png);
+            transform: rotate(180deg);
+            right: 9.5%;
+            &:hover {
+                background: url(../img/right.png);
+                transform: rotate(0deg);
+            }
+        }
+        .bx-pager.bx-default-pager a {
+            width: 11px;
+            height: 11px;
+            background: #ECECEC;
+            opacity: 0.5;
+            &:hover {
+                background: transparent;
+                box-shadow: 0px 0px 0px 2px rgba(211, 193, 173, 1);
+            }
+        }
+        .bx-pager.bx-default-pager a.active {
+            background: transparent;
+            box-shadow: 0px 0px 0px 2px rgba(211, 193, 173, 1);
+        }
+    }
+    &-top {
+        top: 40px;
+    }
+    &-middle {
+        top: 10px;
+    }
+    &-top,
+    &-middle {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        color: #fff;
+        z-index: 333;
+        &-logo {
+            display: flex;
+            align-items: center;
+            span {
+                font-family: 'RalewayRegular';
+                font-size: 2.125rem;
+            }
+        }
+        &-nav {
+            margin-left: 176px;
+            font-size: 0.875rem;
+            ul {
+                li {
+                    display: inline-block;
+                    margin-right: 30px;
+                    a {
+                        color: #fff;
+                        &:hover {
+                            color: #C7B299;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.header-top-right{
+	margin-left: 30px;
+	a{
+		margin-left: 15px;
+		font-size: 0.875rem;
+		color: #fff;
+		&:hover{
+			color: #C7B299;
+		}
+	} 
+}
+
+.header-middle{
+	width: 100%;
+	display: flex;
+	top: 385px;
+	flex-direction: column;
+	text-align: center;
+	h1{
+		font-size: 3.25rem;
+		margin-bottom: 25px;
+	}
+	h3{
+		font-size: 2.25rem;
+		margin-bottom: 10px;
+	}
+	p{
+		font-size: 1rem;
+		line-height: 24px;
+	}
+	a.but{
+		margin-top: 45px;
+	}
+}
+
+.services{
+	padding: 70px 0;
+	.box{
+		height: 300px;
+		flex: 1 1 270px;
+		text-align: center;
+		padding: 10px 0;
+
+		span{
+			display: inline-block;
+			background: url(../img/services.png);
+			width: 53px;
+			height: 48px;
+		}
+		span.box-a{
+			background-position-x: 0;
+		}
+		span.box-b{
+			background-position-x: -53px ;
+		}
+		span.box-c{
+			background-position-x: -106px;
+		}
+		span.box-d{
+			background-position-x: -159px;
+		}
+		h2{
+			font-size: 1.375rem;
+			color: #555555;
+			margin-top: 25px;
+			margin-bottom: 15px;
+		}
+		p{
+			font-size: 0.875rem;
+			color: #8C8C8C;
+			line-height: 24px;
+			margin-bottom: 30px;
+		}
+		hr{
+			width: 70px;
+			height: 3px;
+			background: #C7B299;
+			opacity: 0.3;
+			margin-left: calc(50% - 35px);
+		}
+		&:hover{
+			h2{
+				color: #C7B299;
+			}
+			hr{
+				opacity: 1;
+			}
+			span{
+				background-position-y: 49px;
+			}
+			span.box-a{
+				background-position-y: 48px;
+			}
+		}
+	}
+}
+
+section.ideas{
+	background: #FBFAF8;
+	padding-top: 80px;
+	.container{
+		flex-direction: column;
+	}
+}
+
+.ideas-slider {
+	height: 100%;
+	position: relative;
+	margin-top: 35px;
+}
+.roundabout-holder {
+	width: 54em;
+	height: 485px;
+	margin: 0 auto;
+}
+.roundabout-moveable-item {
+	top:auto!important;
+	bottom: 0 !important;
+	width: 770px;
+	height: 482px;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.roundabout-moveable-item > img{
+	width: 100%;
+	height: 100%;
+}
+
+.section-4{
+	padding: 45px 0;
+	background: linear-gradient(to right, rgba(33,27,25,1) 0%, rgba(77,52,39,1) 100%);
+	.container{
+		align-items: center;
+		justify-content: space-between;
+	}
+	h4{
+		font-family: 'RalewayRegular'; 
+		font-size: 	1.75rem;
+		margin-bottom: 10px;
+		span{
+			color: #C7B299;
+		}
+	}
+	p{
+		color: #615855;
+		font-size: 1.125rem;
+	}
+}
+
+.project{
+	padding-top: 80px;
+	.block{
+		display: flex;
+		width: 100%;
+		margin: 35px 0;
+		.choice{
+			display: flex;
+			width: 100%;
+			justify-content: center;
+			flex-wrap: wrap;
+			a{
+				display: inline-block;
+				font-size: 0.875rem;
+				color: #8C8C8C;
+				margin-right: 10px;
+				padding: 8px 15px;
+				border: 1px solid #EBEBEB;
+				border-radius: 5px;
+				&:hover{
+					color: #fff;
+					background: #998675;
+				}
+			}
+		}
+	}
+}
