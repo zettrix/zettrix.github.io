@@ -28,9 +28,9 @@ body {
 a{
   position: absolute;
   z-index: 99999;
-  top: 0;
-  color: #fff;
+  top: 10px;
   left: 15px;
+  color: #fff;
 }
 
 @keyframes blur {
