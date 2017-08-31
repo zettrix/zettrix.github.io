@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 	<title>Document</title>
 	<link rel="shortcut icon" type="image/x-icon" href="img/icon.png">
 	<link rel="stylesheet" href="libs/bxslider/jquery.bxslider.css"></link>
@@ -20,8 +20,11 @@
 					<img src="img/logo.png" alt="Waxom">
 					<span>Waxom</span>
 				</div>
+				<div class="nav-toggle">
+					<span></span>
+				</div>
 				<nav class="header-top-nav">
-					<ul>
+					<ul id="menu">
 						<li><a href="#">Home</a></li>
 						<li><a href="#">About Us</a></li>
 						<li><a href="#">Portfolio</a></li>
@@ -55,29 +58,31 @@
 
 	<section class="services">
 		<div class="container">
-			<div class="box">
-				<span class="box-a"></span>
-				<h2>Web & App Design</h2>
-				<p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
-				<hr>
-			</div>
-			<div class="box">
-				<span class="box-b"></span>
-				<h2>Development</h2>
-				<p>Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
-				<hr>
-			</div>
-			<div class="box">
-				<span class="box-c"></span>
-				<h2>Customization</h2>
-				<p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
-				<hr>
-			</div>
-			<div class="box">
-				<span class="box-d"></span>
-				<h2>Marketing</h2>
-				<p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
-				<hr>
+			<div class="wrap">
+				<div class="box">
+					<span class="box-a"></span>
+					<h2>Web & App Design</h2>
+					<p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
+					<hr>
+				</div>
+				<div class="box">
+					<span class="box-b"></span>
+					<h2>Development</h2>
+					<p>Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
+					<hr>
+				</div>
+				<div class="box">
+					<span class="box-c"></span>
+					<h2>Customization</h2>
+					<p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
+					<hr>
+				</div>
+				<div class="box">
+					<span class="box-d"></span>
+					<h2>Marketing</h2>
+					<p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
+					<hr>
+				</div>
 			</div>
 		</div>
 	</section><!-- services -->
@@ -100,11 +105,13 @@
 
 	<section class="section-4">
 		<div class="container">
-			<div class="box-r">
-				<h4><span>Waxom</span>Multipurpose WordPress Theme</h4>
-				<p>Don't Forget to Rate the Template. Thanks so much!</p>
+			<div class="wrap">
+				<div class="box-r">
+					<h4><span>Waxom</span>Multipurpose WordPress Theme</h4>
+					<p>Don't Forget to Rate the Template. Thanks so much!</p>
+				</div>
+				<a class="but" href="#">purchase now</a>
 			</div>
-			<a class="but" href="#">purchase now</a>
 		</div>
 	</section><!-- section-4 -->
 
@@ -451,7 +458,7 @@
 		</div><!-- footer_bottom -->
 	</footer><!-- footer -->
 
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 	<script src='libs/bxslider/jquery.bxslider.min.js'></script>
 	<script src='js/jquery.roundabout.min.js'></script>
 	<script src='libs/jquery.film_roll.min.js'></script>
@@ -475,6 +482,9 @@
 			  });
 			});
 		});
+		$('.nav-toggle').on('click', function(){
+  			$('.header-top-nav').toggleClass('active');
+		})
 	</script>
 
 </body>
