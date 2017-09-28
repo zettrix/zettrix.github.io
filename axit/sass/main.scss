@@ -3,6 +3,13 @@
 
 $main-color: #86878B;
 
+*, *:after, *:before {
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+transition: .5s ease-in-out;
+}
+
 header:after,nav:after,section:after,.container:after,.tabs:after,#wr-tabs:after{
 	content: "";
 	display: table;
@@ -690,7 +697,8 @@ img{
 }
 
 .block-price{
-	width: 343px;
+	width: 33%;
+	max-width: 343px;
 	text-align: center;
 	ul > li{
 		background-color: #fff;
@@ -735,6 +743,31 @@ img{
 		font-weight: 700;
 		line-height: 30px;
 	}
+}
+
+
+@media(min-width: 320px) and (max-width: 770px) {
+
+	#pricing{
+		padding: 40px 0;
+		.wrap{
+			align-items: center;
+			flex-direction: column;
+		}
+	}
+	.block-price{
+		width: 100%;
+		margin-bottom: 10px;
+		.description{
+			height: 66px;
+			overflow: hidden;
+		}
+	}
+
+	.description.active-description{
+		height: 100%;
+	}
+
 }
 
 #testimonials{
@@ -788,6 +821,17 @@ img{
 			font-size: 0.875rem;
 		}
 	}
+}
+
+@media(min-width: 320px) and (max-width: 640px) {
+
+	#testimonials{
+		padding: 40px 0;
+		.wrap{
+			justify-content: center;
+		}
+	}
+
 }
 
 #custom{

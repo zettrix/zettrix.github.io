@@ -18,4 +18,8 @@ $(function(){
 	$('.nav-toggle').on('click', function(){
   		$('#nav-menu').toggleClass('active-menu');
 	});
+
+	$('.description').on('click', function(){
+  		$(this).toggleClass('active-description');
+	});
 });

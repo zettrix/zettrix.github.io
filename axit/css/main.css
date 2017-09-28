@@ -78,6 +78,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   src: url("../../fonts/RalewayExtraBold/RalewayExtraBold.eot");
   src: url("../../fonts/RalewayExtraBold/RalewayExtraBold.eot") format("embedded-opentype"), url("../../fonts/RalewayExtraBold/RalewayExtraBold.woff2") format("woff2"), url("../../fonts/RalewayExtraBold/RalewayExtraBold.woff") format("woff"), url("../../fonts/RalewayExtraBold/RalewayExtraBold.ttf") format("truetype"), url("../../fonts/RalewayExtraBold/RalewayExtraBold.svg#RalewayExtraBold") format("svg"); }
 
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out; }
+
 header:after, nav:after, section:after, .container:after, .tabs:after, #wr-tabs:after {
   content: "";
   display: table;
@@ -623,7 +631,8 @@ img {
             justify-content: space-between; }
 
 .block-price {
-  width: 343px;
+  width: 33%;
+  max-width: 343px;
   text-align: center; }
   .block-price ul > li {
     background-color: #fff;
@@ -660,6 +669,28 @@ img {
     color: #fff;
     font-weight: 700;
     line-height: 30px; }
+
+@media (min-width: 320px) and (max-width: 770px) {
+  #pricing {
+    padding: 40px 0; }
+    #pricing .wrap {
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+  .block-price {
+    width: 100%;
+    margin-bottom: 10px; }
+    .block-price .description {
+      height: 66px;
+      overflow: hidden; }
+  .description.active-description {
+    height: 100%; } }
 
 #testimonials {
   padding: 100px 0; }
@@ -707,6 +738,15 @@ img {
     .comment-user span.position {
       color: #86878b;
       font-size: 0.875rem; }
+
+@media (min-width: 320px) and (max-width: 640px) {
+  #testimonials {
+    padding: 40px 0; }
+    #testimonials .wrap {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
 
 #custom {
   padding: 70px 0 15px 0;
