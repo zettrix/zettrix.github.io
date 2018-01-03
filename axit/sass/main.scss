@@ -7,16 +7,13 @@ $main-color: #86878B;
 box-sizing: border-box;
 padding: 0;
 margin: 0;
-transition: .5s ease-in-out;
+transition: .2s ease-in-out;
 }
 
 header:after,nav:after,section:after,.container:after,.tabs:after,#wr-tabs:after{
 	content: "";
 	display: table;
 	clear: both;
-}
-*{
-	//outline: 1px solid;
 }
 
 body{
@@ -493,7 +490,7 @@ img{
 		margin-bottom: 30px;
 	}
 	p{
-		color: #86878b;
+		color: $main-color;
 		font-size: 0.9375rem
 	}
 	.right{
@@ -817,7 +814,7 @@ img{
 			font-weight: 700;
 		}
 		&.position{
-			color: #86878b;
+			color: $main-color;
 			font-size: 0.875rem;
 		}
 	}
