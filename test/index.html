@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Document</title>
+	<link rel="shortcut icon" type="image/x-icon" href="img/icon.png">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<link rel="stylesheet" href="css/main.css">
+	
+</head>
+<body>
+	<div class="wrapper">
+		<header id="header">
+			<div class="header clearfix">
+				<div class="header-logo">
+					<img src="img/logo.png" alt="Брестский стандарт">
+				</div>
+				<div class="nav-toggle"><span></span></div>
+				<div id="header-search" class="header-search">
+					<form id="header-search-form">
+						<input class="header-search-input" placeholder="/ Введите запрос..." type="search">
+					</form>
+				</div>
+				<nav>
+					<ul class="header-nav">
+						<li><a href="#" class="header-nav-link">О компании</a></li>
+						<li><a href="#" class="header-nav-link">Каталог</a></li>
+						<li><a href="#" class="header-nav-link">Партнёрам</a></li>
+						<li><a href="#" class="header-nav-link">Контакты</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="header-slirer">
+				<ul class="bxslider">
+				  <li>
+				  	<div class="bx-slider-wrap">
+				  		<div class="slider-text">
+				  			<h1>Ваш выбор, наша работа!</h1>
+				  			<a href="#">Узнать подробнее</a>
+				  		</div>
+				  		<img src="img/slider-img.png">
+				  	</div>
+				  </li>
+				  <li>
+				  	<div class="bx-slider-wrap">
+				  		<div class="slider-text">
+				  			<h1>Ваш выбор, наша работа!</h1>
+				  			<a href="#">Узнать подробнее</a>
+				  		</div>
+				  		<img src="img/slider-img.png">
+				  	</div>
+				  </li>
+				  <li>
+				  	<div class="bx-slider-wrap">
+				  		<div class="slider-text">
+				  			<h1>Ваш выбор, наша работа!</h1>
+				  			<a href="#">Узнать подробнее</a>
+				  		</div>
+				  		<img src="img/slider-img.png">
+				  	</div>
+				  </li>
+				  <li>
+				  	<div class="bx-slider-wrap">
+				  		<div class="slider-text">
+				  			<h1>Ваш выбор, наша работа!</h1>
+				  			<a href="#">Узнать подробнее</a>
+				  		</div>
+				  		<img src="img/slider-img.png">
+				  	</div>
+				  </li>
+				</ul>
+			</div>
+		</header>
+		<footer id="footer">
+			<span>&copy; 2017 Охота Берестейская</span>
+		</footer>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+	<script src='js/common.js'></script>
+
+	<script>
+		$(document).ready(function(){
+			$('.bxslider').bxSlider({
+				prevText: '',
+				nextText: '',
+				auto: false,
+				pause: 7500
+		  	});
+
+		  	$('.nav-toggle').on('click', function(){
+				$('.header-nav').toggleClass('active');
+			});
+		})
+	</script>
+
+</body>
+</html>

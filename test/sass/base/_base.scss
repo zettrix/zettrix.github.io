@@ -1,0 +1,38 @@
+*{
+	box-sizing: border-box;
+}
+html{
+	height: 100%;
+	background: #ffffff;
+}
+body{
+	height: 100%;
+	font: 16px/24px Arial, sans-serif;
+	color: black;	
+	-webkit-font-smoothing: antialiased;
+	-webkit-backface-visibility: hidden;
+}
+a{
+	color: #26a6d1;
+	cursor: pointer;
+	text-decoration: none;
+	transition: color 0.15s liner;
+}
+a:hover{
+	color: #1e85a7;
+}
+
+h1,h2,h3 {
+	font-size: 30px;
+	line-height: 40px;
+}
+img{
+	height: auto;
+	display: block;
+	width: 100%;
+}
+
+button{
+	outline: none;
+	border: none;
+}
