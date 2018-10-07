@@ -40,6 +40,7 @@ header:after, nav:after, section:after, .container:after .profile:after, .img:af
     clear: both; }
 
 body {
+    background-image: url(bg_body.png);
     font-size: 18px;
     font-family: 'Open Sans', sans-serif;
     line-height: 20px;
@@ -58,6 +59,7 @@ h2{
     display: block;
     text-align: center;
     margin-top: 10px;
+    color: #4944ff;
 }
 
 .profile, #contacts, #sumary, #skills, #exsample, #experience, #education, #english{
@@ -98,8 +100,7 @@ img{
 
 nav {
     position: relative;
-    background: rgba(203, 197, 211, 0.719);
-    padding: 20px 0;
+    background: rgba(86, 86, 86, 0.719);
     text-align: center;
 }
 
@@ -109,7 +110,24 @@ nav ul li{
 }
 
 .nav_link{
+    display: inline-block;
+    padding: 20px 10px;
     color: #fff;
 }
 
+.nav_link:hover{
+    color:rgb(43, 43, 43);
+}
 
+a{
+    color: rgb(245, 78, 78); 
+}
+
+a:hover{
+    color: rgb(181, 0, 0); 
+}
+
+
+li:hover{
+    background: #4c4b4b82;
+}
