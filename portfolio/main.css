@@ -1,0 +1,115 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+ol, ul {
+    list-style: none; }
+
+a, a:hover {
+    text-decoration: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block; }
+
+header:after, nav:after, section:after, .container:after .profile:after, .img:after , .content:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+body {
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 20px;
+    color: rgb(0, 0, 0); 
+}
+
+.container{
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1024px;
+    width:100%;
+}
+
+h2{
+    font-size: 26px;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.profile, #contacts, #sumary, #skills, #exsample, #experience, #education, #english{
+    border-bottom: 1px solid #000;
+
+}
+span{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.profile{
+    height: 225px;
+}
+
+.img{
+    margin-top: 15px;
+    float: left;
+}
+
+img{
+    width: 145px;
+}
+
+.name{
+    font-size: 20px;
+    font-weight: bold;
+}
+.content{
+    display: inline-block;
+    padding: 15px 20px;    
+}
+
+.content a {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+nav {
+    position: relative;
+    background: rgba(203, 197, 211, 0.719);
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.nav_link{
+    color: #fff;
+}
+
+
