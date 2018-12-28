@@ -6,6 +6,7 @@ body {
 }
 
 a{
+  display: block;
   color: #fff;
   text-decoration: none;
   margin: 15px;
